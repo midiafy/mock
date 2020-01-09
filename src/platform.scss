@@ -1,0 +1,41 @@
+.is-platform {
+
+    color: $white;
+
+    background: $fy-primary-color;
+    background: linear-gradient(180deg, $black 0%, $black-ish 25%);
+    min-height: 100vh;
+
+    h4 {
+        font-size: $size-5;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+        span {
+            text-transform: none;
+            font-weight: normal;  
+            font-size: $size-6;
+        }
+
+        margin-bottom: 5px;
+    }
+
+    .carousel {
+        margin-bottom: 30px;
+
+
+        .is-content {
+            img {
+                height: 140px;
+                min-height: 140px !important;
+            }
+            max-height: 140px;
+            min-height: 140px;
+            background: $grey-darker;
+        }
+    }
+
+
+
+
+}

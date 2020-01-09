@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Nobile:400,700');
+
+
+$fy-primary-color: #976DD0;
+$fy-secondary-color: #8A4D76;
+
+$family-sans-serif: "Nobile", sans-serif;
+$primary: $fy-primary-color;
+// $warning: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+$white: #F7F7F7;
+$black: #000000;
+$black-ish: #111111;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$orange: #FF9052;
+
+$input-border-color: rgba(255,255,255,0.4);
+$input-hover-border-color: rgba(255,255,255,0.7);
+$input-focus-border-color: $white;
+$input-color: $white;
+$input-icon-active-color: $white;
+$input-shadow: none;
+$input-background-color: transparent;
+
+$grey-light: $beige-light;
+
+.has-text-purple {
+    color: $fy-primary-color !important;
+  }
+
+  .has-text-brand {
+    color: $fy-secondary-color !important;
+  }  
+
+@import "../node_modules/bulma/bulma.sass";
+@import '../node_modules/bulma-extensions/bulma-pricingtable/src/sass/index.sass';
+@import '../node_modules/bulma-extensions/bulma-checkradio/src/sass/index.sass';
+
+@import 'platform.scss';
+
+.select {
+    option {
+        color: $black;
+    }
+}
+
+.is-bold {
+    h3 { color:$orange; }
+}
+
+.title {
+    span {
+        color: $warning;
+    }
+}
+
+.has-brand img {
+    max-width: 300px;
+}
+
+.featured {
+
+    h3 { 
+      color: $fy-secondary-color; 
+      font-weight: bold; 
+      font-size: $size-4; 
+    }
+  
+    figure {
+      margin-bottom: 1rem;
+    }
+  
+    .column { text-align: center; }
+    .slug { 
+  
+      padding-top: 1rem;
+      
+      span { 
+        margin-top: 3rem !important; 
+        color: $grey-light; 
+        font-size: $size-5;
+      } 
+  
+    }
+  }
+
+  .tag-color {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.columns.is-vcentered {
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+}
